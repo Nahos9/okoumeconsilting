@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Okoume Consulting</title>
-    <link rel="stylesheet" href="ok.css">
+    <link rel="stylesheet" href="ok1.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
@@ -30,13 +30,13 @@
                         <a class="nav-link active lien" aria-current="page" href="#">Accueil</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link lien" href="#">Services</a>
+                        <a class="nav-link lien" href="#secteurs">Services</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link lien" href="#">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link  btn btn-danger button" href="#">Prendre rendez-vous</a>
+                        <a class="nav-link  btn btn-danger button" href="#contact">Prendre rendez-vous</a>
                     </li>
                 </ul>
             </div>
@@ -86,17 +86,20 @@
         </button>
     </div>
     <!-- Section présentation -->
-    <section class="text-center sect1">
-        <p class="titre-section1">Qui sommes-nous?</p>
+    <div class="container text-center">
+        <section class="sect1 mb-5">
+            <p class="titre-section1">Qui sommes-nous?</p>
 
-        <p>Nous sommes un cabinet de conseils spécialisé dans la formation et l'analyse de donnée.</p>
-        <p>Nous accompagnons les professionnels et les étudiants dans l'acquisition des compétences <br> les plus
-            demandées sur le marché de l'emploi afin de booster leur carrière.</p>
-        <p>Notre pôle Data Analysic accompagne des entreprise dans l'analyse de leur données <br> afin de faciliter la
-            prise de déscisions stratégiques et l'optimisation de la performance.</p>
-    </section>
+            <p>Nous sommes un cabinet de conseils spécialisé dans la formation et l'analyse de donnée.</p>
+            <p>Nous accompagnons les professionnels et les étudiants dans l'acquisition des compétences <br> les plus
+                demandées sur le marché de l'emploi afin de booster leur carrière.</p>
+            <p>Notre pôle Data Analysic accompagne des entreprise dans l'analyse de leur données <br> afin de faciliter
+                la
+                prise de déscisions stratégiques et l'optimisation de la performance.</p>
+        </section>
+    </div>
     <!-- Section secteur d'activité -->
-    <section class="secteur-activite mt-5 container">
+    <section class="secteur-activite mt-5 container mb-5" id="secteurs">
         <p class="titre-sec">Secteur d'activité</p>
         <div class="row mx-0">
             <div class="col-md-3">
@@ -109,15 +112,19 @@
                 <p>Conseil en orientation</p>
             </div>
             <div class="col-md-3">
-
+                <i class="fas fa-graduation-cap"></i>
+                <p class="mt-2 text-uppercase">Formation inter et intra entreprise</p>
+                <p>Donner à vos collaborateur une formation sur mesure grâce <br> à nos programmes.</p>
             </div>
             <div class="col-md-3">
-
+                <i class="fas fa-graduation-cap"></i>
+                <p class="mt-2 text-uppercase">Formation inter et intra entreprise</p>
+                <p>Donner à vos collaborateur une formation sur mesure grâce <br> à nos programmes.</p>
             </div>
         </div>
 
     </section>
-    <section class="nous-contacter">
+    <section class="nous-contacter" id="contact">
         <div class="row mx-0 justify-content-between px-5">
             <div class="col-md-6 p-4">
                 <iframe
@@ -126,8 +133,9 @@
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div class="col-md-6 w-50">
-                <p class="contact-titre">Contactez-nous</p>
+                <p class="contact-titre ">Contactez-nous</p>
                 <form action="#">
+                    <p class="text-white">Laissez nous un message, notre équipe vous recontactera dans les meilleurs délais</p>
                     <div class="mb-3">
                         <input type="text" placeholder="Votre Nom complet" class="form-control">
                     </div>
@@ -173,6 +181,9 @@
                 <i class="fab fa-facebook-square"></i>
                 <i class="fab fa-linkedin-in"></i>
             </div>
+        </div>
+        <div class="row text-center mx-0 mt-5">
+            <p>	Copyright  &copy; tout droit réservé by OkouméConsulting 2023</p>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

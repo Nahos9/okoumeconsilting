@@ -8,9 +8,13 @@ body {
 }
 
 /* NavBar */
-
+nav{
+    position: fixed !important;
+    z-index: 2;
+    width: 100%;
+}
 .titre-ok {
-    font-size: 1.2rem !important;
+    font-size: 1.4rem !important;
     /* color: red !important; */
 }
 
@@ -68,8 +72,9 @@ ul li a:hover {
 }
 
 .sect1 p {
-    letter-spacing: 1px;
-    text-align: justify;
+    letter-spacing: 2px;
+    /* line-height: 3px; */
+    /* text-align: justify; */
 }
 
 /* SECTION 2 */
@@ -80,7 +85,12 @@ ul li a:hover {
     font-weight: bold;
     opacity: 0.7;
 }
-
+form{
+    margin-left: auto !important;
+}
+form textarea{
+    resize: none;
+}
 .secteur-activite i {
     font-size: 3rem;
 }
@@ -136,8 +146,8 @@ ul li a:hover {
     color: white;
     transition: 2s;
 }
-.nous-contacter input:hover{
-    background: transparent;
+.nous-contacter input[type=submit]:hover{
+    background: yellow;
     color: white;
 }
 .nous-contacter form{
