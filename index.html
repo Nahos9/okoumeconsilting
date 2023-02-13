@@ -16,9 +16,9 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light px-5">
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent px-5">
         <div class="container-fluid">
-            <a class="navbar-brand titre-ok" href="">Okoumé<span class="titre-jaune">Consulting</span></a>
+            <a class="navbar-brand titre-ok text-white" href="">Okoumé<span class="titre-jaune">Consulting</span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -27,13 +27,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active lien" aria-current="page" href="#">Accueil</a>
+                        <a class="nav-link active lien text-white" aria-current="page" href="#">Accueil</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link lien" href="#secteurs">Services</a>
+                        <a class="nav-link lien text-white" href="#secteurs">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link lien" href="#">Contact</a>
+                        <a class="nav-link lien text-white" href="#">Contact</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link  btn btn-danger button" href="#contact">Prendre rendez-vous</a>
@@ -53,21 +53,21 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="./assets/img/scott.jpg" class="d-block w-100" alt="photo" height="550px">
+                <img src="./assets/img/scott.jpg" class="d-block w-100" alt="photo" height="700px">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Okoumé Consulting</h5>
                     <p>Nous vous aidons dans la formation.</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="./assets/img/hunters.jpg" class="d-block w-100" alt="photo" height="550px">
+                <img src="./assets/img/hunters.jpg" class="d-block w-100" alt="photo" height="700px">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Découvrir nos offres</h5>
                     <p>Une large game de Services conçue pour vous.</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="./assets//img//mediensturmer.jpg" class="d-block w-100" height="550px" alt="photo">
+                <img src="./assets//img//mediensturmer.jpg" class="d-block w-100" height="700px" alt="photo">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Competences</h5>
                     <p>Nous vous donnons l'occasion d'avoir des compétences dans divers domaine.</p>
@@ -88,7 +88,7 @@
     <!-- Section présentation -->
     <div class="container text-center">
         <section class="sect1 mb-5">
-            <p class="titre-section1">Qui sommes-nous?</p>
+            <p class="titre-section1 text-uppercase fw-bold">Qui sommes-nous?</p>
 
             <p>Nous sommes un cabinet de conseils spécialisé dans la formation et l'analyse de donnée.</p>
             <p>Nous accompagnons les professionnels et les étudiants dans l'acquisition des compétences <br> les plus
@@ -100,25 +100,25 @@
     </div>
     <!-- Section secteur d'activité -->
     <section class="secteur-activite mt-5 container mb-5" id="secteurs">
-        <p class="titre-sec">Secteur d'activité</p>
+        <p class="titre-sec text-uppercase fw-bold">Secteur d'activité</p>
         <div class="row mx-0">
-            <div class="col-md-3">
-                <i class="fas fa-graduation-cap"></i>
-                <p class="mt-2 text-uppercase">Formation inter et intra entreprise</p>
+            <div class="col-md-3 card p-3 ">
+                <i class="fas fa-database"></i>
+                <p class="mt-2 text-uppercase fw-bold">Analyse de données</p>
                 <p>Donner à vos collaborateur une formation sur mesure grâce <br> à nos programmes.</p>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 card p-3">
                 <i class="fas fa-handshake"></i>
-                <p>Conseil en orientation</p>
+                <p class="mt-2 text-uppercase fw-bold">Enquetes de Satisfaction</p>
             </div>
-            <div class="col-md-3">
-                <i class="fas fa-graduation-cap"></i>
-                <p class="mt-2 text-uppercase">Formation inter et intra entreprise</p>
+            <div class="col-md-3 card p-3">
+                <i class="fas fa-chart-line"></i>
+                <p class="mt-2 text-uppercase fw-bold">Tableaux de Bord</p>
                 <p>Donner à vos collaborateur une formation sur mesure grâce <br> à nos programmes.</p>
             </div>
-            <div class="col-md-3">
-                <i class="fas fa-graduation-cap"></i>
-                <p class="mt-2 text-uppercase">Formation inter et intra entreprise</p>
+            <div class="col-md-3 card p-3">
+                <i class="far fa-newspaper"></i>
+                <p class="mt-2 text-uppercase fw-bold">Reporting</p>
                 <p>Donner à vos collaborateur une formation sur mesure grâce <br> à nos programmes.</p>
             </div>
         </div>
@@ -157,7 +157,7 @@
     </section>
     <footer class="footer mt-5">
         <div class="row mx-0 justify-content-center px-5">
-            <div class="col-md-4 text-center">
+            <div class="col-md-3 text-center">
                 <p class="footer-titre">Travail avec nous</p>
                 <ul>
                     <li>Actualité</li>
@@ -166,7 +166,7 @@
                     <li>Actualité</li>
                 </ul>
             </div>
-            <div class="col-md-4 text-center">
+            <div class="col-md-3 text-center">
                 <p class="footer-titre">Métiers</p>
                 <ul>
                     <li>Formation inter et intra entreprise</li>
@@ -175,11 +175,19 @@
                     <li>Maison d'édition</li>
                 </ul>
             </div>
-            <div class="col-md-4 text-center">
+            <div class="col-md-3 text-center">
                 <p class="footer-titre">Nous suivre</p>
                 <i class="fab fa-whatsapp-square"></i>
                 <i class="fab fa-facebook-square"></i>
                 <i class="fab fa-linkedin-in"></i>
+            </div>
+            <div class="col-md-3">
+                <p class="footer-titre">Nous contacter</p>
+            <ul>
+                <li class="pb-2"> <i class="far fa-envelope"></i> okoumeconsulting.sn@gmail.com</li>
+                <li><i class="fas fa-phone"></i>  +211 77 115 73 77</li>
+            </ul>
+                
             </div>
         </div>
         <div class="row text-center mx-0 mt-5">
