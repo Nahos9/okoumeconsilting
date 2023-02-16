@@ -1,3 +1,24 @@
+<?php  
+
+if(isset($_POST["message"])){
+
+    $message = "Ce mesage vous a été envoyé par  
+     Nom : " .$_POST["name"] ."
+     Email : ".$_POST["email"] ."
+     Message : " .$_POST["message"];
+   
+
+    $retour = mail("garcianahos9@gmail.com",$_POST["subject"],$message);
+
+    if($retour){
+        echo "Message envoyé avec success!!";
+    }else {
+        echo "Erreur!!";
+    }
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,7 +27,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Okoume Consulting</title>
-    <link rel="stylesheet" href="ok1.css">
+    <link rel="stylesheet" href="../ok1.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
@@ -53,21 +74,21 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="./assets/img/scott.jpg" class="d-block w-100" alt="photo" height="700px">
+                <img src="../assets/img/scott.jpg" class="d-block w-100" alt="photo" height="700px">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Okoumé Consulting</h5>
                     <p>Nous vous aidons dans la formation.</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="./assets/img/hunters.jpg" class="d-block w-100" alt="photo" height="700px">
+                <img src="../assets/img/hunters.jpg" class="d-block w-100" alt="photo" height="700px">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Découvrir nos offres</h5>
                     <p>Une large game de Services conçue pour vous.</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="./assets//img//mediensturmer.jpg" class="d-block w-100" height="700px" alt="photo">
+                <img src="../assets//img//mediensturmer.jpg" class="d-block w-100" height="700px" alt="photo">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Competences</h5>
                     <p>Nous vous donnons l'occasion d'avoir des compétences dans divers domaine.</p>
@@ -135,19 +156,22 @@
             </div>
             <div class="col-md-6 w-50">
                 <p class="contact-titre ">Contactez-nous</p>
-                <form action="#">
+                <form action="" method="post">
                     <p class="text-white">Laissez nous un message, notre équipe vous recontactera dans les meilleurs délais</p>
                     <div class="mb-3">
-                        <input type="text" placeholder="Votre Nom complet" class="form-control">
+                        <input type="text" placeholder="Votre Nom complet" class="form-control" name="fullname">
                     </div>
                     <div class="mb-3">
-                        <input type="text" placeholder="Votre Email" class="form-control">
+                        <input type="text" placeholder="Votre Email" class="form-control" name="email">
                     </div>
                     <div class="mb-3">
-                        <input type="text" placeholder="Votre Numéro de téléphone" class="form-control">
+                        <input type="text" placeholder="Votre Numéro de téléphone" class="form-control" name="phone">
                     </div>
                     <div class="mb-3">
-                        <textarea id="" cols="30" rows="10" placeholder="Votre message" class="form-control">
+                        <input type="text" placeholder="Votre sujet" class="form-control" name="subject">
+                    </div>
+                    <div class="mb-3">
+                        <textarea id="" cols="30" rows="10" placeholder="Votre message" class="form-control" name="message">
 
                         </textarea>
                         <input type="submit" name="" id="" value="Envoyer">
